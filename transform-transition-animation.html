@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height:200px;
+            position: relative;
+            /* background-color: aquamarine; */
+            background: linear-gradient(rgb(189, 24, 214),white,rgb(172, 231, 23),black);
+
+
+            animation-name:circleAnimation;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+
+
+        @keyframes circleAnimation{
+            from{
+                transform: rotate(0);
+                left:0;
+            }
+            to{
+                transform: rotate(360deg);
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Transform:
+    -translate
+    -scale
+    -rotate
+    -skew
+
+
+    Transition:
+    Animation:
+        @keyframes
+    
+    -->
+
+<div>CSS3</div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        body{
+            height: 1100px;
+        }
+        section,div{
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .abs{
+            position: absolute;
+            top: 10px;
+            left: 300px;
+        }
+        div{
+            position: relative;
+            top: 10px;
+            right: 50px;
+        }
+        .fix{
+            position: fixed;
+            top: 200px;
+            left: 400px;
+            background-color: orange;
+            color: white;
+        }
+        .stky{
+            position: sticky;
+            top: 0px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Positions in CSS:
+    -static
+    -Relative
+    -Absolute
+    -Fixed
+    -Sticky(Intoduced in CSS3)
+    
+    -top
+    -left
+    -right
+    -bottom
+    
+    -->
+    <section>HTML</section>
+    <section class="fix">CSS</section>
+    <section class="stky">Bootstrap</section>
+    <div>
+        <section class="abs">JS</section>
+    </div>
+</body>
+</html>

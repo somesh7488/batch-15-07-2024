@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background properties</title>
+    <style>
+        section,div{
+            border: 1px solid red;
+            padding: 20px;
+            margin-bottom: 10px;
+            height: 450px;
+        }
+        section{
+            background-image: url(./logo-white.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-attachment: scroll; */
+            background-size: contain;
+        }
+        div{
+            background: url(./logo-white.png) no-repeat top left,
+            url(./logo-white.png) no-repeat top right,
+            url(./logo-white.png) no-repeat center,
+            url(./logo-white.png) no-repeat bottom left,
+            url(./logo-white.png) no-repeat bottom right;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>AchieversIT</section>
+    <div>Somesh Kumar</div>
+</body>
+</html>

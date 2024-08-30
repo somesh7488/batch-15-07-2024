@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .fcontainer{
+            border: 2px solid blue;
+            display: flex;
+            height: 400px;
+            justify-content: space-evenly;
+            align-items: center;
+            /* flex-wrap: wrap-reverse; */
+            /* flex-direction: column-reverse; */
+        }
+
+        
+        .fitems{
+            border: 2px solid red;
+            margin: 12px;
+            width: 120px;
+            height: 120px;
+            /* flex-grow: 2; */
+            /* flex: 10; */
+        }
+        .item1{
+            /* order: 1; */
+            flex:2;
+        }
+        .item2{
+            /* order:2; */
+            flex:1;
+        }
+        .item3{
+            /* order: 3; */
+            flex:1;
+        }
+        .item4{
+            /* order: 4; */
+            flex:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="fcontainer">
+        <div class="fitems item1">1</div>
+        <div class="fitems item2">2</div>
+        <div class="fitems item3">3</div>
+        <div class="fitems item4">4</div>
+    </div>
+</body>
+</html>
