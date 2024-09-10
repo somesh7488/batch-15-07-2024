@@ -80,6 +80,90 @@
             document.write(z[j]+"</br>");
             j++;
         }
+
+        //Objects:Objects are always create din the term of key and values;
+
+        var product={
+            name:"macbook Air",
+            model:'MA0001',
+            price:70000,
+            desc:"Good product",
+            discount:"10%"
+        }
+
+        console.log(product);
+
+        document.write("<h2>Object retrieval Manually:</h2>");
+
+        document.write(product.name+"</br>");
+        document.write(product.model+"</br>");
+        document.write(product.price+"</br>");
+        document.write(product.desc+"</br>");
+        document.write(product.discount+"</br>");
+
+
+    document.write("<h2>Object retrieval using loops:</h2>");
+
+
+    for(let i in product){
+
+        document.write(product[i]+"</br>")
+
+
+    }
+
+    //Array of objects:
+
+    let users=[{
+        id:1,
+        name:"Somesh Kumar",
+        email:"srv.somesh@gmail.com",
+        mob:1111111111,
+        qualification:"MBA-IT"
+    },{
+        id:2,
+        name:"Ganesh",
+        email:"ganesh@gmail.com",
+        mob:22222222,
+        qualification:"MCA"
+    },{
+        id:3,
+        name:"Laxmi",
+        email:"laxmi@gmail.com",
+        mob:33333333333,
+        qualification:"Btech"
+
+    }];
+
+    console.log(users);
+    
+
+    document.write("<h2>Array of Object retrieval:</h2>");
+
+    document.write(users[0].id+"</br>");
+    document.write(users[1].id+"</br>");
+    document.write(users[2].id+"</br>");
+
+
+    document.write(users[0].name+"</br>");
+    document.write(users[1].name+"</br>");
+    document.write(users[2].name+"</br>");
+
+    document.write("<h2>Array of Object using loops:</h2>");
+
+    for(let i=0;i<users.length;i++){
+        document.write(users[i].id+"</br>");
+        document.write(users[i].name+"</br>");
+        document.write(users[i].email+"</br>");
+        document.write(users[i].mob+"</br>");
+        document.write(users[i].qualification+"</br>");
+        document.write("</br>");
+    }
+
+
+
+        
+
         
 
     </script>
