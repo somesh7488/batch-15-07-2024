@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Storage Techniques</title>
+</head>
+<body>
+    <!-- 
+    -number
+    -string
+    -boolean
+    -undefined
+    -null
+    -Arrays
+    -objects
+    -Array of objects
+
+    Data Storage techniques:
+    -strings
+    Arrays
+    -objects
+    -Array of objects
+
+    
+    -->
+
+    <script>
+        //strings:
+
+        //String Literals:
+        var course="ReactJS Training";
+        document.write(course+"</br>");
+        document.write(typeof course+"</br>");
+
+        course="Mern Stack";
+        document.write(course+"</br>");
+
+        //string constructor:
+        var trainer=new String('Somesh Kumar');
+        document.write(trainer+"</br>");
+        document.write(typeof trainer+"</br>");
+
+        //Array:
+        document.write("<h2>Arrays:</h2>")
+
+        //Array Literals:
+
+        var concepts=['HTML','CSS',"Javascript"];
+        document.write(concepts+"</br>");
+        document.write(typeof concepts+"</br>");
+
+        //Array constructor:
+
+        var virus=new Array("covid-19",'omicron',"Delta","BF-7","xyz",'abc',"ghi");
+        document.write(virus+"</br>");
+        document.write(typeof virus+"</br>");
+
+        document.write("<h2>Array retrieval manually:</h2>");
+
+        document.write(virus[0]+"</br>");
+        document.write(virus[1]+"</br>");
+        document.write(virus[2]+"</br>");
+        document.write(virus[3]+"</br>");
+        
+        document.write("<h2>Array retrieval using loops:</h2>");
+        console.log(virus.length);
+        
+
+        for(let i=0;i<virus.length;i++){
+
+            document.write(virus[i]+"</br>");
+
+        }
+
+        let z=[1,4,6,83,"Somesh",66,65,98,54,76,12];
+
+        let j=0;
+        while(j<z.length){
+            document.write(z[j]+"</br>");
+            j++;
+        }
+        
+
+    </script>
+</body>
+</html>

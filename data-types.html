@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes in JS</title>
+</head>
+<body>
+    <!-- 
+    Data types:
+
+        -Primitive Data type:
+            -Number
+            -String:
+            -Boolean:
+            -undefined:
+            -Null
+        -Non-Primitive data type:
+                -Array
+                -Objects
+                -Array o fobjects
+    -->
+
+    <script>
+        let num=-54.65;
+        console.log(num);
+        console.log(typeof(num));
+
+
+        let name='Somesh Kumar';
+        console.log(name);
+        console.log(typeof name);
+
+        const isLoggedIn=true;
+        console.log(isLoggedIn);
+        console.log(typeof isLoggedIn);
+
+        //undefined:
+        
+        let a=undefined;
+        console.log(a);
+        console.log(typeof a);
+
+        //null:
+        let b=null;
+        console.log(b);
+        console.log(typeof b);
+        
+        
+        //Array:
+
+        // syntax: variable_Keyword var_name=[x,y,....,z]
+
+        var n=[1,2,3,4,5];
+        var x=[3,"somesh",true, undefined];
+
+        console.log(n);
+        console.log(x);
+
+        console.log(x[2]);
+
+        //objects:
+
+        let markerPen={
+            name:"Camelin",
+            color:"red",
+            price:10
+        }
+
+        const airbuds={
+            name:"Apple airbuds2",
+            color:"white",
+            price:20000,
+            desc:"Good product",
+            Ratings:"4-Star"
+        }
+
+        console.log(markerPen);
+        console.log(markerPen.name);
+        
+        
+        //Array of objects:
+
+        var users=[{id:1},{id:2},{id:3}];
+
+        console.log(users);
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>
