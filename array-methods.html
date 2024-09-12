@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods in JS</title>
+</head>
+<body>
+    <!-- 
+    Array Methods in JS:
+    -push():
+    -pop():
+    -unshift():
+    -shift():
+    -slice():
+    -splice():
+    -concat():
+    -sort():
+    -reverse():
+
+    -map():
+    -fliter():
+    -reduce():
+    
+    -->
+    <script>
+        //Array Literal:
+
+        let cricketers=["Sachin",'Dravid',"Sourav"];
+
+        // cricketers.splice(1,2,"Ganesh");
+        
+        
+
+        console.log(cricketers);
+        
+
+        //Array constructor:
+
+        let new_cricketers=new Array("Virat","Rohit","Dhoni");
+
+        console.log(cricketers,new_cricketers);
+
+        //push:
+        new_cricketers.push("Hardik");
+        console.log(new_cricketers);
+
+        //pop:
+        new_cricketers.pop();
+        console.log(new_cricketers);
+
+        //unshift:
+        new_cricketers.unshift("Hardik");
+        console.log(new_cricketers);
+
+        //shift:
+        new_cricketers.shift();
+        console.log(new_cricketers);
+
+        //slice:
+        let a=[1,2,3,4,5,6,7,8,9];
+        console.log(a);
+
+        let b=a.slice(4,8);
+        console.log(b);
+
+        //concat:
+        let w=[8,1,5];
+        let x=[1,2,3,4,5,6];
+        let y=[5,6,7,8,9];
+
+        //splice:
+
+
+        let name=["ganesh",'ishwar',"somesh","rajamuthu",'laxmi','sasi'];
+
+        console.log(name);
+
+        name.splice(-3,1);
+        console.log(name);
+        
+        
+        
+        //sort():
+            let no=[12,5,8,1,3,9,4,115,15,11,23,27];
+            console.log(no);
+
+            console.log(no.sort()); //1,3,4,5,8,9,11,12,15,23,27
+            console.log(no.reverse());
+            
+            
+            
+        
+        
+        
+        
+        
+        
+
+        
+    </script>
+</body>
+</html>
